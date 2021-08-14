@@ -16,7 +16,7 @@ def weather_form():
 
 @app.route("/about")
 def about():
-	return "<h1>Im an 8th grader based in Phoenix, AZ, USA</h1>.<br><a href='/'>Home</a>"
+	return render_template("about.html")
 
 if __name__ == '__main__':
 	app.run(debug=True)
